@@ -4,8 +4,6 @@ x = x.split('\n')
 
 lst = []
 
-
-
 for i in range(len(x)):
     for j in range(len(x[i])):
         lst2 = []
