@@ -1,10 +1,10 @@
-x = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Nezoter\\foglaltsag.txt',mode='r')
+x = open(file='2014_oktober\\foglaltsag.txt',mode='r')
 x = x.read()
 lst = x.split('\n')
 lst.pop()
 print(lst)
 
-y = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Nezoter\\kategoria.txt',mode='r')
+y = open(file='2014_oktober\kategoria.txt',mode='r')
 y = y.read()
 lst2 = y.split('\n')
 print(lst2)

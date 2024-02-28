@@ -1,4 +1,4 @@
-x = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Sorozatok\\lista.txt',mode='r')
+x = open(file='2020_oktober\\lista.txt',mode='r')
 x = x.read()
 x = x.split('\n')
 #print(x)

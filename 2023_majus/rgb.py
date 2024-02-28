@@ -1,4 +1,4 @@
-x = open(file="C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\2023_majus\\kep.txt", mode="r")
+x = open(file="2023_majus\\kep.txt", mode="r")
 x = x.read()
 print(x)
 x = x.split(" ")

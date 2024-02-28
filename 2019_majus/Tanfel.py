@@ -1,4 +1,4 @@
-x = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Tantargyfelosztas\\beosztas.txt',mode='r')
+x = open(file='2019_majus\\beosztas.txt',mode='r')
 x = x.read()
 x = x.split('\n')
 x.pop()

@@ -14,7 +14,7 @@ legtobbszor_fiu = []
 legtobbszor_lany = []
 
 
-x = open(file="C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\tancrend.txt", mode="r", encoding="utf-8")
+x = open(file="2015_majus\\tancrend.txt", mode="r", encoding="utf-8")
 x = x.read()
 x =  x.split('\n')
 x.pop()

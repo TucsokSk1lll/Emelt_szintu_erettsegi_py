@@ -1,4 +1,4 @@
-x = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Fogadoora\\fogado.txt',mode='r')
+x = open(file='2018.majus\\fogado.txt',mode='r')
 x = x.read()
 x = x.split('\n')
 

@@ -1,5 +1,5 @@
 megoldas = 'BCCCDBBBBCDAAA'
-x = open(file='C:\\Users\\gyo.joz.2008.01.TAG\\Documents\\webpage\\Emelt_szintu_erettsegi_py\\Tesztverseny\\valaszok.txt',mode='r')
+x = open(file='2017_majus\\valaszok.txt',mode='r')
 x = x.read()
 x = x.split('\n')
 x.pop()
