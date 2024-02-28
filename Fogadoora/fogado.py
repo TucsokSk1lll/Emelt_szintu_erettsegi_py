@@ -77,9 +77,4 @@ for i in range(1,len(lst4)):
     else:
         print(lst4[len(lst4)-i])
         break
-
-
-
-
-
 #if int(lst4[3:4])
