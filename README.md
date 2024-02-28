@@ -1,0 +1,1 @@
+Inputot lusta vagyok belerakni.
