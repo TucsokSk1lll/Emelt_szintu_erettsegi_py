@@ -77,7 +77,7 @@ print(kerulet)
 print('6.feladat')
 oszlop = 6
 
-diagram = open("diagram.txt", "w+")
+diagram = open("2021_majus\\diagram.txt", "w+")
 
 for i in range(len(x)):
     
