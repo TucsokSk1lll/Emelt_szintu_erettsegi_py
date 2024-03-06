@@ -88,4 +88,5 @@ for i in range(len(lst)):
                 egyedulallo3 += 1
                 #print(lst[i][j-1],lst[i][j],lst[i][j+1],i,j)
 
+
 print(egyedulallo1+egyedulallo2+egyedulallo3)
