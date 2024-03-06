@@ -16,7 +16,7 @@ for i in range(len(x)):
         cut = i+1
         lst.append(lst2)
         lst2 = []
-print(lst)
+#print(lst)
 
 sor = 1
 oszlop = 1
