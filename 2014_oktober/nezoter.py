@@ -18,6 +18,7 @@ if lst[sor-1][oszlop-1] == 'x':
 else:
     print('nem foglalt')
 
+
 print('3.feladat')
 összesen = 20*15
 eladott = 0
