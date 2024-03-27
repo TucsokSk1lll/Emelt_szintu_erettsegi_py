@@ -103,7 +103,7 @@ for i in range(len(lst)):
 
     versenyzo.append(0)
 
-    versenyzo.append(0)
+    versenyzo.append(i+1)
 
     sztringlol = ''
     for j in lst[i]:
@@ -115,29 +115,25 @@ for i in range(len(lst)):
     versenyzo.append(loertek(sztringlol))
     sorrend.append(versenyzo)
 
-#print(sorrend)
-sorrend_masolat = []
-for i in range(len(sorrend)):
-    sorrend_masolat.append(sorrend[i].copy())
-for i in range(len(sorrend)):
-    sorrend_masolat[i][1] = i+1
-#print(sorrend_masolat)
-
-sorrend.sort(reverse=True)
-#print(sorrend)
-
-for i in range(len(sorrend)):
-    sorrend[i][0] = i+1
-
 print(sorrend)
-print('\n')
-print(sorrend_masolat)
-print('\n')
+
+pontszamok = []
+
+for i in range(len(sorrend)):
+    pontszamok.append(sorrend[i][2])
+pontszamok.sort(reverse=True)
+print(pontszamok)
+
+sorrend2 = []
 
 for i in range(len(sorrend)):
     for j in range(len(sorrend)):
-        if sorrend[i][2] == sorrend_masolat[j][2]:
-            sorrend[i][1] = sorrend_masolat[j][1]
-            break
+        if pontszamok[i] == sorrend[j][2]:
+            sorrend2.append(sorrend[j])
 
-print(sorrend)
+print('\n',sorrend2)
+
+for i in range(len(sorrend2)):
+    sorrend2[i][0] = i+1
+
+print('\n',sorrend2)
