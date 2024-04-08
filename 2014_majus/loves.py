@@ -96,6 +96,8 @@ for i in lst[sorszam-1]:
 
 print(loertek(sztringxd))
 
+print('6. feladat')
+
 sorrend = []
 
 for i in range(len(lst)):
@@ -115,7 +117,7 @@ for i in range(len(lst)):
     versenyzo.append(loertek(sztringlol))
     sorrend.append(versenyzo)
 
-print(sorrend)
+print('xd',sorrend)
 
 pontszamok = []
 
@@ -131,9 +133,15 @@ for i in range(len(sorrend)):
         if pontszamok[i] == sorrend[j][2]:
             sorrend2.append(sorrend[j])
 
-print('\n',sorrend2)
+print('\n','asdadasd',sorrend2)
 
 for i in range(len(sorrend2)):
-    sorrend2[i][0] = i+1
-
+    if sorrend2[i][0] == 0:
+        if i == len(sorrend2)-1:
+            sorrend2[i][0] = i+1
+        elif sorrend2[i][2] != sorrend2[i+1][2]:
+            sorrend2[i][0] = i+1
+        else:
+            sorrend2[i][0] = i+1
+            sorrend2[i+1][0] = i+1
 print('\n',sorrend2)
