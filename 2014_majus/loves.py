@@ -1,3 +1,4 @@
+#Lovesek beolvasasa 
 x = open(file='2014_majus\\verseny.txt',mode='r+').read().split('\n')
 versenyzok_szama = x[0]
 x.pop(0)
@@ -8,6 +9,8 @@ x.pop(-1)
 lst = []
 
 #print(len(x))
+
+# + kicserelese 1-re, - kicserelese 0-ra
 for i in range(len(x)):
     lst2 = []
     for j in x[i]:
@@ -16,8 +19,9 @@ for i in range(len(x)):
         else:
             lst2.append(0)
     lst.append(lst2)
-print(lst)
+#print(lst)
 
+# Ha egymas utan legalabb 2 talalat van (1-es a listaba), akkor kiirja a versenyzo sorszamat
 print('2. feladat')
 for i in range(len(lst)):
     talalat = 0
@@ -30,17 +34,20 @@ for i in range(len(lst)):
             print(i+1, end=' ')
             break
 
+# A legtobb lovest elert versenyzo sorszamat kiiratja
+# Egy listaban van minden ember loveseinek a szama. Ha a lovesek szama egyezik a max lovesek szamaval, akkor kiirja a sorszamat.
 print('\n3. feladat')
 lovesek_szama = []
 for i in range(len(lst)):
     lovesek = len(lst[i])
     lovesek_szama.append(lovesek)
-
+print(lovesek_szama)
 for i in range(len(lovesek_szama)):
     if lovesek_szama[i] == max(lovesek_szama):
         print(i+1)
 
-
+# Átkonvertálja egy versenyzo loveseit szimbolizalo 0-kat és 1-eseket a versenyzo altal elert pontokra
+# Valakinek a lovesei => pontszama
 def loertek(sor):
     aktpont = 20
     ertek = 0
@@ -117,14 +124,14 @@ for i in range(len(lst)):
     versenyzo.append(loertek(sztringlol))
     sorrend.append(versenyzo)
 
-print('xd',sorrend)
+#print('xd',sorrend)
 
 pontszamok = []
 
 for i in range(len(sorrend)):
     pontszamok.append(sorrend[i][2])
 pontszamok.sort(reverse=True)
-print(pontszamok)
+#print(pontszamok)
 
 sorrend2 = []
 
@@ -133,7 +140,7 @@ for i in range(len(sorrend)):
         if pontszamok[i] == sorrend[j][2]:
             sorrend2.append(sorrend[j])
 
-print('\n','asdadasd',sorrend2)
+#print('\n','asdadasd',sorrend2)
 
 for i in range(len(sorrend2)):
     if sorrend2[i][0] == 0:
@@ -144,4 +151,4 @@ for i in range(len(sorrend2)):
         else:
             sorrend2[i][0] = i+1
             sorrend2[i+1][0] = i+1
-print('\n',sorrend2)
+print(sorrend2)
