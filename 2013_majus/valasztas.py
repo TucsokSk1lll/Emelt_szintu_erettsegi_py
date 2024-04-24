@@ -39,12 +39,63 @@ else:
 # Kiirja hogy a partok az osszes szavazat hany szazalekat kaptak.
 # de hat ez ugyan az mint az elozo xd
 print('5. feladat')
-szazalekok = {}
+partok = [['-', 0]]
+szavazatok = 0
+for i in range(len(x)):
+    szavazatok += int(x[i][1])
+
+#print(x)
 
 for i in range(len(x)):
-    szazalekok[str(x[i][2]) + ' ' + str(x[i][3])] = x[i][1]
+    bennevane = False
+    for j in range(len(partok)):
+        #print(x[i][4], partok[j][0])
+        if x[i][4] == partok[j][0]:
+            #print(x[i][4], partok[j][0],'lol')
+            bennevane = True
+            break
+    if not bennevane:
+        partok.append([x[i][4], 0])
 
-for i in szazalekok.keys():
-    print(i)
+for i in range(len(x)):
+    for j in range(len(partok)):
+        if x[i][4] == partok[j][0]:
+            partok[j][1] += int(x[i][1])
 
+for i in range(len(partok)):
+    partok[i].append(str(partok[i][1] / szavazatok * 100)[0:4] + '%')
 
+for i in range(len(partok)):
+    partok[i].pop(1)
+
+partok[0][0] = 'Fuggetlenek'
+
+print(partok)
+
+print('6. feladat')
+legtobb = ['fakexd',0]
+for i in range(len(x)):
+    jelolt = []
+    if int(x[i][1]) > int(legtobb[1]):
+        jelolt.append(str(x[i][2]+' '+x[i][3]))
+        jelolt.append(x[i][1])
+        legtobb = jelolt
+        #print(legtobb)
+    elif int(x[i][1]) == int(legtobb[1]):
+        jelolt.append(str(x[i][2]+' '+x[i][3]))
+        jelolt.append(x[i][1])
+        legtobb.append(jelolt)
+        #print(legtobb)
+print(legtobb)
+
+print('7.feladat')
+
+keruletek = [[1,0,'fake','part'],[2,0,'fake','part'],[3,0,'fake','part'],[4,0,'fake','part'],[5,0,'fake','part'],[6,0,'fake','part'],[7,0,'fake','part'],[8,0,'fake','part']]
+
+for i in range(len(x)):
+    for j in range(len(keruletek)):
+        if int(x[i][0]) == int(keruletek[j][0]):
+            if int(x[i][1]) > int(keruletek[j][1]):
+                keruletek[j] = x[i]
+
+print(keruletek)
