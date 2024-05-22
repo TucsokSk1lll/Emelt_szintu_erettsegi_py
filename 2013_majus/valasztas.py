@@ -90,7 +90,7 @@ print(legtobb)
 
 print('7.feladat')
 
-keruletek = [[1,0,'fake','part'],[2,0,'fake','part'],[3,0,'fake','part'],[4,0,'fake','part'],[5,0,'fake','part'],[6,0,'fake','part'],[7,0,'fake','part'],[8,0,'fake','part']]
+keruletek = [[1,0,'fake','part','lol'],[2,0,'fake','part','lol'],[3,0,'fake','part','lol'],[4,0,'fake','part','lol'],[5,0,'fake','part','lol'],[6,0,'fake','part','lol'],[7,0,'fake','part','lol'],[8,0,'fake','part','lol']]
 
 for i in range(len(x)):
     for j in range(len(keruletek)):
