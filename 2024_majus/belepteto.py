@@ -63,3 +63,21 @@ else:
     print('A menzába többen jártak be.')
 
 print('6. feladat')
+
+belepok = []
+duplan_beleopk = []
+
+for i in range(len(lst)):
+    #print(lst[i][1][0:2],lst[i][1][3:6])
+    if lst[i][0] not in belepok and lst[i][2] == '1':
+        belepok.append(lst[i][0])
+    elif lst[i][0] in belepok and lst[i][2] == '2':
+        belepok.remove(lst[i][0])
+    elif lst[i][0] in belepok and lst[i][2] == '1' and ((int(lst[i][1][0:2]) == 10 and int(lst[i][1][3:6]) > 50) or (int(lst[i][1][0:2]) == 11 and int(lst[i][1][3:6]) == 0)):
+        duplan_beleopk.append(lst[i][0])
+
+#print(belepok)
+print(duplan_beleopk)
+
+print('7. feladat')
+

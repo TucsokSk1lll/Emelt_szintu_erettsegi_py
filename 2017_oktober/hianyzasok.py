@@ -1,5 +1,5 @@
 import math
-x = open(file='2017_oktober\\naplo.txt',mode='r',encoding="utf-8")
+x = open(file='Emelt_szintu_erettsegi_py\\2017_oktober\\naplo.txt',mode='r',encoding="utf-8")
 x = x.read()
 #print(x)
 
