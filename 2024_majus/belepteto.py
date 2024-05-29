@@ -58,9 +58,9 @@ for i in range(len(lst)):
 print(konyvtar)
 
 if konyvtar > menza:
-    print('A könyvtárba többen jártak be.')
+    print('A konyvtarba tobben jartak be.')
 else:
-    print('A menzába többen jártak be.')
+    print('A menzaba tobben jartak be.')
 
 print('6. feladat')
 
