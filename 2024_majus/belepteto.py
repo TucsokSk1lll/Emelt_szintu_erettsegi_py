@@ -81,7 +81,7 @@ print(duplan_beleopk)
 
 print('7. feladat')
 
-azonosto = 'AAAA'
+azonosto = 'ZOOM'
 
 belepes = []
 kilepes = []
