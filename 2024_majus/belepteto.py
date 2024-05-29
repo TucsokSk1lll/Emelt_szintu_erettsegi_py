@@ -81,3 +81,28 @@ print(duplan_beleopk)
 
 print('7. feladat')
 
+azonosto = 'AAAA'
+
+belepes = []
+kilepes = []
+
+for i in range(len(lst)):
+    if lst[i][0] == azonosto and lst[i][2] == '1':
+        belepes.append(lst[i][1])
+    if lst[i][0] == azonosto and lst[i][2] == '2':
+        kilepes.append(lst[i][1])
+
+idoxd = []
+
+idoxd.append(int(kilepes[len(kilepes)-1][0:2]) - int(belepes[len(belepes)-1][0:2]))
+if int(kilepes[len(kilepes)-1][3:5]) < int(belepes[len(belepes)-1][3:5]):
+    idoxd[0] -= 1
+    print(kilepes[len(kilepes)-1])
+    kilepes[len(kilepes)-1] =  str(kilepes[len(kilepes)-1][0:2]) + ':' + str(int(kilepes[len(kilepes)-1][3:5]) + 60)
+    print(kilepes[len(kilepes)-1])
+idoxd.append(int(kilepes[len(kilepes)-1][3:5]) - int(belepes[len(belepes)-1][3:5]))
+
+
+print(belepes,kilepes)
+print(idoxd)
+
