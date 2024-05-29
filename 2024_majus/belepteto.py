@@ -97,12 +97,13 @@ idoxd = []
 idoxd.append(int(kilepes[len(kilepes)-1][0:2]) - int(belepes[len(belepes)-1][0:2]))
 if int(kilepes[len(kilepes)-1][3:5]) < int(belepes[len(belepes)-1][3:5]):
     idoxd[0] -= 1
-    print(kilepes[len(kilepes)-1])
+    #print(kilepes[len(kilepes)-1])
     kilepes[len(kilepes)-1] =  str(kilepes[len(kilepes)-1][0:2]) + ':' + str(int(kilepes[len(kilepes)-1][3:5]) + 60)
-    print(kilepes[len(kilepes)-1])
+    #print(kilepes[len(kilepes)-1])
 idoxd.append(int(kilepes[len(kilepes)-1][3:5]) - int(belepes[len(belepes)-1][3:5]))
 
 
-print(belepes,kilepes)
-print(idoxd)
+#print(belepes,kilepes)
+#print(idoxd)
+print(str(idoxd[0]) + ' ora ' + str(idoxd[1]) + ' perc ')
 
