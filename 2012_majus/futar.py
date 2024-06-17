@@ -6,6 +6,7 @@ lst = []
 for i in range(len(x)):
     lst.append(x[i].split(' '))
 lst.pop()
+lst.sort()
 print(lst)
     
 print('2. feladat')
@@ -100,22 +101,22 @@ tetszoleges_szam = 0
 
 def berezes(tetszoleges_szam):
     if tetszoleges_szam <= 2 and tetszoleges_szam > 0:
-        return('500ft')
+        return('500 Ft')
         print('500ft')
     elif tetszoleges_szam <= 5 and tetszoleges_szam > 2:
-        return('700ft')
+        return('700 Ft')
         print('700ft')
     elif tetszoleges_szam <= 10 and tetszoleges_szam > 5:
-        return('900ft')
+        return('900 Ft')
         print('900ft')
     elif tetszoleges_szam <= 20 and tetszoleges_szam > 10:
-        return('1400ft')
+        return('1400 Ft')
         print('1400ft')
     elif tetszoleges_szam <= 30 and tetszoleges_szam > 20:
-        return('2000ft')
+        return('2000 Ft')
         print('2000ft')
     elif tetszoleges_szam == 0:
-        return('0ft')
+        return('0 Ft')
         print('SIKE that is the wrong number')
 
 print(berezes(tetszoleges_szam))
@@ -123,8 +124,10 @@ print(berezes(tetszoleges_szam))
 #8.feladat
 
 dijazas = open(file='2012_majus\\dijazas.txt',mode='w')
-
-for i in range(len(lst)):
-    
-    
-
+ut = 1
+nap = 1
+for i in range(7):
+    for j in range(len(lst)):
+        if int(lst[j][0]) == nap and int(lst[j][1]) == ut:
+            dijazas.write(str(lst[j]) + '\n')
+            ut += 1
