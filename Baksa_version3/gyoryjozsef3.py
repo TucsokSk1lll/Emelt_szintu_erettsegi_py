@@ -1,4 +1,4 @@
-x = open(file='Baksa_version3\\emberek.txt',mode='r').read().split('\n')
+x = open(file='C:\\Users\\jgyor\\OneDrive\\Dokumentumok\\GitHub\\Emelt_szintu_erettsegi_py\\Baksa_version3\\emberek.txt',mode='r').read().split('\n')
 
 for i in range(len(x)):
     x[i] = x[i].split(' ')
@@ -40,7 +40,7 @@ print('A fiatalok atlageletkora: ' + str(osszeg/len(eletkorok))[0:5])
 
 #5.feladat
 
-ki = open(file='Baksa_version3\\ki.txt', mode='w')
+ki = open(file='C:\\Users\\jgyor\\OneDrive\\Dokumentumok\\GitHub\\Emelt_szintu_erettsegi_py\\Baksa_version3\\ki.txt', mode='w')
 
 for i in range(len(lst)):
     if int(lst[i][0]) >= 150 and int(lst[i][0]) <= 200 and len(lst[i][1]) == 5:

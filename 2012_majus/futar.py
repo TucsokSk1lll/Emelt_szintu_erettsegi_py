@@ -125,6 +125,4 @@ print(berezes(tetszoleges_szam))
 dijazas = open(file='2012_majus\\dijazas.txt',mode='w')
 
 for i in range(len(lst)):
-    
-    
-
+    pass

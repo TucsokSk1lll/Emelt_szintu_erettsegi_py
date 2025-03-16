@@ -109,8 +109,3 @@ dict = {}
 for i in range(len(lstb)):
     dict.update({lstb[i][0]:int(lstb[i][1])})
 print(max(dict.values()))
-
-
-
-
-
