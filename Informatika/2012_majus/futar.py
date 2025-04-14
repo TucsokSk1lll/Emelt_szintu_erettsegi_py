@@ -124,11 +124,6 @@ print(berezes(tetszoleges_szam))
 #8.feladat
 
 dijazas = open(file='2012_majus\\dijazas.txt',mode='w')
-<<<<<<< HEAD
-
-for i in range(len(lst)):
-    pass
-=======
 ut = 1
 nap = 1
 for i in range(7):
@@ -136,4 +131,3 @@ for i in range(7):
         if int(lst[j][0]) == nap and int(lst[j][1]) == ut:
             dijazas.write(str(lst[j]) + '\n')
             ut += 1
->>>>>>> 8bdb9ce879d04afe58385d8ba7cba001cc757845

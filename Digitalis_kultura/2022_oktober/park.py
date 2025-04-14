@@ -63,7 +63,7 @@ for i in range(len(lst)):
         for j in range(0,int(lst[i][1])+1):
             if ultetes[j] == 0:
                 ultetes[j] = [lst[i][2],i+1]
-print(ultetes)
+#print(ultetes)
 
 beultetett = 0
 felajanlasok_szama = 0
@@ -78,8 +78,8 @@ for i in lst:
         felajanlasok_szama += int(agyasok[0])-int(i[0])
         felajanlasok_szama += int(i[1])+1
 
-print(felajanlasok_szama)
-print(beultetett)
+#print(felajanlasok_szama)
+#print(beultetett)
 
 
 
