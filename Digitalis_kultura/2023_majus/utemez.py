@@ -100,13 +100,16 @@ elmehet = True
 
 for i in range(len(erdeklodott_sorted)):
     for j in range(len(erdeklodott_sorted)):
-        print(sorszam(erdeklodott_sorted[i][0],erdeklodott_sorted[i][1]),sorszam(erdeklodott_sorted[j][0],erdeklodott_sorted[j][1]))
-        if (sorszam(int(erdeklodott_sorted[i][0]),int(erdeklodott_sorted[i][1])) < sorszam(int(erdeklodott_sorted[j][0]),int(erdeklodott_sorted[j][1])) and sorszam(int(erdeklodott_sorted[i][2]),int(erdeklodott_sorted[i][3])) < sorszam(int(erdeklodott_sorted[j][2]),int(erdeklodott_sorted[j][3]))) or (int(sorszam(int(erdeklodott_sorted[i][0])),int(erdeklodott_sorted[i][1])) > sorszam(int(erdeklodott_sorted[j][0]),int(erdeklodott_sorted[j][1])) and sorszam(int(erdeklodott_sorted[i][2]),int(erdeklodott_sorted[i][3])) > sorszam(int(erdeklodott_sorted[j][2]),int(erdeklodott_sorted[j][3]))):
-            pass
-        else:
+        datum1_kezdes = sorszam(int(erdeklodott[i][0]),int(erdeklodott[i][1])) 
+        datum1_vege = sorszam(int(erdeklodott[i][2]),int(erdeklodott[i][3]))
+        datum2_kezdes = sorszam(int(erdeklodott[j][0]),int(erdeklodott[j][1]))
+        datum2_vege = sorszam(int(erdeklodott[j][2]),int(erdeklodott[j][3]))
+        
+        if (datum1_kezdes < datum2_kezdes and datum1_vege < datum2_kezdes) == False and (datum1_kezdes > datum2_vege and datum1_vege > datum2_vege) == False:
             elmehet = False
+            break
 
 if elmehet == True:
-    print('Nem mehet el mindegyik taborba.')
-else:
     print('Elmehet mindegyik taborba.')
+else:
+    print('Nem mehet el mindegyik taborba.')
