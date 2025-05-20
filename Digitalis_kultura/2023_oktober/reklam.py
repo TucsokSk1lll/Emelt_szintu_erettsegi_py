@@ -1,4 +1,4 @@
-lst = open('C:\\Users\\jgyor\\OneDrive\\Dokumentumok\\GitHub\\Emelt_szintu_erettsegi_py\\2023_oktober\\rendel.txt','r').read().split('\n')
+lst = open('Digitalis_kultura\\2023_oktober\\rendel.txt','r').read().split('\n')
 for i in range(len(lst)):
     lst[i] = lst[i].split(' ')
 print(lst)
