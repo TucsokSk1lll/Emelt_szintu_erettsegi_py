@@ -15,7 +15,7 @@ for i in konyv:
 for i in konyv:
 	print(szam*str(str(i)+' '*(leghosszabb-len(i)+1)+'|'))
  
-print('3.feladat')
+#print('3.feladat')
 def atalakit(sor):
     atalakitott = ''
     

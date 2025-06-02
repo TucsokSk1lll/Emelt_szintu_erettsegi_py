@@ -14,7 +14,7 @@ legtobbszor_fiu = []
 legtobbszor_lany = []
 
 
-x = open(file="2015_majus\\tancrend.txt", mode="r", encoding="utf-8")
+x = open(file="Informatika\\2015_majus\\tancrend.txt", mode="r", encoding="utf-8")
 x = x.read()
 x =  x.split('\n')
 x.pop()
@@ -28,7 +28,7 @@ for i in range(int(len(x)/3)-1):
             Vilma_tancai.append(lst2[0])
         x.pop(0)
     lst.append(lst2)
-#print(lst)
+print(lst)
 
 print('Elso es utolso tanc: ',lst[0][0], lst[len(lst)-1][0])
 
